@@ -77,12 +77,6 @@ public:
 
 int main()
 {
-    int i, pom,liczba;
-    Stos tab1;
-    Stos tab2;
-    tab1.init(10);
-    tab2.init(10);
-
     for(int i=0; i<10; i++)
     {
         cout<<"Podaj liczbe: ";
