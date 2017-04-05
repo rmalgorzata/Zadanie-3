@@ -84,11 +84,7 @@ int main()
     tab2.init(10);
 
     for(int i=0; i<10; i++)
-    {
-        cout<<"Podaj liczbe: ";
-        cin>>liczba;
-        tab1.push(liczba);
-    }
+        i++;
 
     return 0;
 }
