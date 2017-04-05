@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1489960254 source:c:\users\nfjgf\desktop\zadanie_3\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
