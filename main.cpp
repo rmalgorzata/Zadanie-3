@@ -10,12 +10,6 @@ public:
     int wielkosc;
     int *tab;
 
-    void init(int rozmiar)
-    {
-        tab = new int[rozmiar];
-        wielkosc = rozmiar;
-    }
-
     int push(int wartosc)
     {
         if(licznik == wielkosc)
@@ -29,6 +23,17 @@ public:
             return 0;
         }
     }
+
+ int top()
+    {
+        int a;
+        if(this->empty() == 1)
+        {
+            a = tab[licznik-1];
+            return a;
+        }
+    }
+
 
     int pop()
     {
@@ -60,18 +65,6 @@ public:
         else
         {
             return 1;
-        }
-    }
-
-    int empty()
-    {
-        if(licznik == 0)
-        {
-            return 0; //stos pusty
-        }
-        else
-        {
-            return 1; //stos niepusty
         }
     }
 
