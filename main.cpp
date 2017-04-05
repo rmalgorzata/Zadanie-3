@@ -82,6 +82,7 @@ int main()
         cout<<"Podaj liczbe: ";
         cin>>liczba;
         tab1.push(liczba);
+        cout<<"";
     }
 
     cout<<endl<<endl;
