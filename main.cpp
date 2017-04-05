@@ -77,14 +77,23 @@ public:
 
 int main()
 {
-    int i, pom,liczba;
-    Stos tab1;
-    Stos tab2;
-    tab1.init(10);
-    tab2.init(10);
-
     for(int i=0; i<10; i++)
-        i++;
+    {
+        cout<<"Podaj liczbe: ";
+        cin>>liczba;
+        tab1.push(liczba);
+        cout<<"";
+    }
+
+    cout<<endl<<endl;
+
+    while(tab1.empty())
+    {
+        tab2.push(tab1.pop());
+        cout<<tab2.top()<<endl;
+    }
+
+    tab1.destroy();
 
     return 0;
 }
