@@ -90,15 +90,5 @@ int main()
         tab1.push(liczba);
     }
 
-    cout<<endl<<endl;
-
-    while(tab1.empty())
-    {
-        tab2.push(tab1.pop());
-        cout<<tab2.top()<<endl;
-    }
-
-    tab1.destroy();
-
     return 0;
 }
